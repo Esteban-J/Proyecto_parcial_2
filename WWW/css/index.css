@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#title{
+    text-align: center;
+}
+
+.rental_price{
+    color: rgb(145, 36, 58);
+}
