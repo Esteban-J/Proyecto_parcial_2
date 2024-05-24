@@ -3,7 +3,7 @@ const fs = require('fs');
 const querystring = require('querystring'); 
 http.createServer((request, response) => {
     const file = request.url == '/' ? './WWW/index.html' : `./WWW/${request.url}`;
-    if (request.url === '/contact') {
+    if (request.method === 'POST') {
         let data = [];
         request.on('data', value => {
             data.push(value);
@@ -12,6 +12,7 @@ http.createServer((request, response) => {
             const parsedFormData = querystring.parse(parsedData);
             const { nombre, apellido, calle, codigo_postal, email } = parsedFormData;
             const formData = `Nombre: ${nombre}\nApellido: ${apellido}\nCalle: ${calle}\nCódigo Postal: ${codigo_postal}\nEmail: ${email}\n\n`;
+            
             fs.appendFile('contactData.txt', formData, (err) => {
                 if (err) {
                     console.error('Error writing to file:', err);
