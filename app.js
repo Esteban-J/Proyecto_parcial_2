@@ -20,34 +20,36 @@ http.createServer((request, response) => {
                     response.end('Server Error');
                     return;
                 }
-                response.writeHead(200, { 'Content-Type': 'text/plain' });
-                response.end('Form submitted successfully!');
+                response.writeHead(302, { 'Location': '/' });
+                response.end();
             });
         });
-    } 
-    fs.readFile(file, (err, data) => {
-        if (err) {
-            //mandar 404
-            response.writeHead(404, { "Content-Type": "text/plain" });
-            response.write("not found");
-            response.end();
-        } else {
-            const extension = request.url.split(".").pop();
-            console.log(extension);
-            switch (extension) {
-                case 'txt':
-                    response.writeHead(200, { "Content-Type": "text/plain" });
-                    break;
-                case 'html':
-                    response.writeHead(200, { "Content-Type": "text/html" });
-                    break;
-                case 'jpeg':
-                    response.writeHead(200, { "Content-Type": "image/jpeg" });
-                    break;
+    } else {
+        fs.readFile(file, (err, data) => {
+            if (err) {
+                //mandar 404
+                response.writeHead(404, { "Content-Type": "text/plain" });
+                response.write("not found");
+                response.end();
+            } else {
+                const extension = request.url.split(".").pop();
+                console.log(extension);
+                switch (extension) {
+                    case 'txt':
+                        response.writeHead(200, { "Content-Type": "text/plain" });
+                        break;
+                    case 'html':
+                        response.writeHead(200, { "Content-Type": "text/html" });
+                        break;
+                    case 'jpeg':
+                        response.writeHead(200, { "Content-Type": "image/jpeg" });
+                        break;
+                }
+                response.write(data);
+                response.end();
             }
-            response.write(data);
-            response.end();
-        }
-    })
+        })
+    }
+    
 
 }).listen(8888);
