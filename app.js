@@ -24,7 +24,7 @@ http.createServer((request, response) => {
                 response.end('Form submitted successfully!');
             });
         });
-    }
+    } 
     fs.readFile(file, (err, data) => {
         if (err) {
             //mandar 404

@@ -1,18 +1,20 @@
 body{
-    
+    background-image: url("/images/form_background.avif");
+    background-size: cover; 
 }
 
 #form-outer-container{
-    border: solid rgb(0, 0, 0) 2px;
-    margin-left: 20%;
-    margin-right: 20%;
+    color: aliceblue;
+    background-color: black;
+    border: solid rgb(255, 254, 254) 2px;
+    margin-left: 30%;
+    margin-right: 30%;
     padding: 2%;
-    background-color: aqua;
     text-align: center;
 }
 #form-inner-container{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 2%;
     /* border: solid rgb(0, 0, 0) 2px; */
 }
@@ -35,3 +37,24 @@ body{
     border-radius: 5px;
     border: 1px solid #39c;
 }
+
+#contact-input{
+    height:40px; 
+    width:100px;
+    cursor: pointer;
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}
+
+#contact-input:hover {
+    background: #016ABC;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #000000;
+    text-shadow: none;
+    }

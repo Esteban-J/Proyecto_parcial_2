@@ -1,11 +1,5 @@
 
-Nombre: sdasd
-Apellido: 
-Calle: 
-Código Postal: undefined
-Email: 
-
-Nombre: sdsdsdsdsdsdsdsd
+Nombre: 
 Apellido: 
 Calle: 
 Código Postal: undefined

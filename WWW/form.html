@@ -10,8 +10,9 @@
 
 <body>
     <div id="form-outer-container">
+        <h2>Información de contacto</h2><hr>
         <div id="form-inner-container">
-            <form id="contact-form"  method="post">
+            <form id="contact-form"  method="post" action="/">
     
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
@@ -26,6 +27,14 @@
                     <input id="calle" type="text" name="calle"><br><br>
                 </div>
                 <div class="form-group">
+                    <label for="colonia">Colonia</label>
+                    <input id="colonia" type="text" name="colonia"><br><br>
+                </div>
+                <div class="form-group">
+                    <label for="ciudad">Ciudad</label>
+                    <input id="ciudad" type="text" name="ciudad"><br><br>
+                </div>
+                <div class="form-group">
                     <label for="codigo postal">Código postal</label>
                     <input id="codigo postal" type="text" name="codigo postal"><br><br>
                 </div>
@@ -33,8 +42,12 @@
                     <label for="email">email</label>
                     <input id="email" type="text" name="email"><br><br>
                 </div>
+                <div class="form-group">
+                    <label for="Teléfono">Teléfono</label>
+                    <input id="Teléfono" type="text" name="Teléfono"><br><br>
+                </div>
     
-                <input type="submit">
+                <input id="contact-input" type="submit" value="Enviar">
             </form>
         </div>
     </div>
