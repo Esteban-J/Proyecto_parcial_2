@@ -1,0 +1,45 @@
+body{
+    font-family: Arial,sans-serif;
+    background-color: #CDE6EB;
+    margin: 40px;
+    border: 3px solid #696969;
+    padding: 30px;
+}
+
+.Title-About{
+    color: #382a74;
+    font-size: 45px;
+    text-align: center;
+}
+
+.Subtitle-About{
+    color: cornflowerblue;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.Text-Principal-About{
+    color:black;
+    font-size: 20px;
+    text-align: center;
+}
+li{
+    color:#5B5B5B;
+    font-size: 18px;
+    text-align: center;
+}
+
+#Logo{
+    width: 150px;
+    height: auto;
+    border: 5px solid #ffffff;
+    margin-right: 50px;
+}
+h1{
+    color:brown;
+    flex: 1;
+    font-size: 60px;
+    text-align: center;
+    
+}

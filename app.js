@@ -44,6 +44,9 @@ http.createServer((request, response) => {
                     case 'jpeg':
                         response.writeHead(200, { "Content-Type": "image/jpeg" });
                         break;
+                    case 'png':
+                        response.writeHead(200, { "Content-Type": "image/png" });
+                        break;
                 }
                 response.write(data);
                 response.end();
