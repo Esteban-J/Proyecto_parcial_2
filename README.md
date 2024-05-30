@@ -1,10 +1,10 @@
 # Proyecto del Segundo Parcial
 
-Owr project is a website called ¨Automax¨ which offers car rental services. The website consist of 4 webpages containing diverse information like contact information and the cars avaiable for rent.
+Owr project is a website called ¨Automax¨ which offers car rental services. The website consist of 4 webpages containing diverse information like contact information and the cars available for rent.
 
 ## Getting Started
 
-To get the sourc code files from this project in your local machine you can click the following link https://github.com/Esteban-J/Proyecto_parcial_2/archive/refs/heads/main.zip
+To get the source code files from this project in your local machine you can click the following link https://github.com/Esteban-J/Proyecto_parcial_2/archive/refs/heads/main.zip
 
 ### Prerequisites
 
@@ -34,7 +34,7 @@ choco install nodejs
 
 #### Intalling Docker
 
-Follow this tutorial to install ducker in your system:
+Follow this tutorial to install docker in your system:
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-es, 
 
 ## Running the tests
