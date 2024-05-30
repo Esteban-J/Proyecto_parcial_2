@@ -6,16 +6,53 @@ body {
     text-align: center;
 }
 
-#title{
+header{
+    height: 200px;
     text-align: center;
+}
+#title{
+    font-size: 70px;;
+    padding-top: 50px;
+}
+
+h2{
+    font-size: 35px;
 }
 
 .rental_price{
     color: rgb(145, 36, 58);
+    font-size: 30px;
 }
 
-footer{
-    background-color: rgb(211, 211, 211);
-    height: 300px;
-    border: solid gray 4px;
+.car-group{
+    & a {
+        color: aliceblue;
+        text-decoration: none;
+        font-size: 20px;
+        
+    }
+
+    & a:hover{
+        color: blue;        
+    }
+
+    & p {
+        font-size: 20px;
+    }
 }
+
+
+
+footer{
+    padding: 30px;
+    background-color: rgb(211, 211, 211);
+    height: 150px;
+    border: solid gray 4px;
+    & a {
+        margin: solid red 3px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
+
+
