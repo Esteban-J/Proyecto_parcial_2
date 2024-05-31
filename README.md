@@ -61,6 +61,7 @@ docker run -p 8888:8888 ericktati11/test1:v1
 ```
 From that moment you can enter localhost:8888 and start browsing the project.
 
+**Link of the Docker Image:** https://hub.docker.com/repository/docker/ericktati11/prueba_1/general
 
 ## Built With
 
